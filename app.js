@@ -1,7 +1,7 @@
 const elements = document.querySelectorAll(".container .elements"),
   container = document.querySelector(".elements");
 
-elements.forEach(el => {
+elements.forEach((el) => {
   ranTop = Math.round(Math.random() * 90 + 1) + "%";
   ranLeft = Math.round(Math.random() * 90 + 1) + "%";
   el.style.top = ranTop;
@@ -122,67 +122,67 @@ function waktu() {
       kata = [
         "Udah lewat jam tidur ini",
         "Jangan begadang aja!",
-        "Tidur uii tidur..."
+        "Tidur uii tidur...",
       ];
     } else if (jam > 2 && jam <= 6) {
       kata = [
         "Mihh jam segini udah bangun",
-        "Tumben pagi gini bangun",
-        "Ada kegiatan ya? semangat!"
+        "Pagi amat bangun wkwk",
+        "Ada kegiatan ya? semangat!",
       ];
     } else {
       kata = [
         "Bangun woii bangun...",
         "Udah kesiangan ini",
-        "Awes ntar dimarahin lagi"
+        "Awes ntar dimarahin ibuknya",
       ];
     }
-    h2.innerHTML = "Selamat Pagi";
+    h2.innerHTML = "Pagi Diah";
   } else if (jam > 10 && jam <= 13) {
     if (jam <= 11) {
       kata = [
         "Gimana? udah selesai bersih-bersih?",
         "Inget mandi sama makan",
-        "Jangan tidur lagi..."
+        "Jangan tidur lagi...",
       ];
     } else {
       kata = [
         "Udah makan sama mandi kan?",
         "Kalo ngantuk tidur siang aja",
-        "Kalo ngerjain tugas, semangat"
+        "Kalo ngerjain tugas, semangat",
       ];
     }
-    h2.innerHTML = "Selamat Siang";
+    h2.innerHTML = "Siang Diah";
   } else if (jam > 13 && jam <= 19) {
     if (jam <= 16) {
       kata = [
         "Udah dapet tidur siang nih?",
         "Kalo belum tidur dulu",
-        "Kalo ada tugas inget buat"
+        "Kalo ada tugas inget dibuat",
       ];
     } else {
       kata = [
         "Udah makan kan?",
         "Tugasnya gimana? udah dibuat?",
-        "Ga ada rencana jalan gitu?"
+        "Mandi muh udah sore, bau wkwk",
       ];
     }
-    h2.innerHTML = "Selamat Sore";
+    h2.innerHTML = "Sore Diah";
   } else {
     if (jam <= 20) {
       kata = [
-        "Mandi muh udah sore, bau",
+        "Inget mandi, sembahyang",
         "Inget makan juga",
-        "Kalo mau nonton jangan lama-lama"
+        "Kalo mau nonton jangan lama-lama",
       ];
     } else {
       kata = [
         "Udah dapet makan kan?",
         "Semangat buat tugasnya...",
-        "Jangan tidur malem banget ya"
+        "Jangan tidur malem banget ya",
       ];
     }
-    h2.innerHTML = "Selamat Malam";
+    h2.innerHTML = "Malam Diah";
   }
   return kata;
 }
